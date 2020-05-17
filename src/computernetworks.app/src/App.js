@@ -581,12 +581,35 @@ function App() {
         subHeader={true}
         subHeaderComponent={
           (
-            <div style={{ display: 'flex', alignItems: 'center' }}>
-              <FilterField 
-                onFilter={e => setFilterText(e.target.value)}
-                onClear={() => setFilterText("")}
-                filterText={filterText} 
-              />
+            <div style={{width: '100%', 
+                         display: 'flex',
+                         flexWrap: 'wrap',
+                         justifyContent: 'space-between'
+            }}>
+              <img height='50' src='https://cdac.uchicago.edu/wp-content/uploads/2019/09/CDAC_Logo_RGB_v01Full.svg' alt='CDAC' />
+              <div style={{ display: 'flex', alignItems: 'center', minWidth: '100'}}>
+                <FilterField 
+                  onFilter={e => setFilterText(e.target.value)}
+                  onClear={() => setFilterText("")}
+                  filterText={filterText} 
+                />
+              </div>
+              <div style={{display: 'flex', textDecoration: 'none'}}>
+              <p><b><a href='https://www.github.com/ggmartins/resources/tree/master/src/computernetworks.app' 
+                       style={{
+                         textDecoration: 'none',
+                         color: 'black'
+                       }}>
+                Computer Networks |
+              </a></b></p>
+              <a href='https://www.github.com/ggmartins/resources/tree/master/src/computernetworks.app'>
+                <img 
+                  height='50px'
+                  src='https://cdac-misc.s3.us-east-2.amazonaws.com/images/Ei-sc-github.svg'
+                  alt='GitHub'
+                />
+              </a>
+              </div>
             </div>
           )
         }
