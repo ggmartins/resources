@@ -167,7 +167,8 @@ class Expansion extends React.Component {
 
   render () {
     return (
-      <ExpansionStyle>
+      <div style={{display: 'flex', alignItems: 'left'}}>
+      <ExpansionStyle >
         <Card style={this.card1Style}>
           <CardContent>
               <ModalImage
@@ -268,6 +269,7 @@ class Expansion extends React.Component {
           </CardContent>
         </Card>*/}
       </ExpansionStyle>
+      </div>
     );//return
   }//render
 }//Expansion

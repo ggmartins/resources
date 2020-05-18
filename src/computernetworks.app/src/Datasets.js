@@ -83,7 +83,7 @@ export default [ //https://encore-data.s3.us-east-2.amazonaws.com/index.html
     datestart: '01-2006',
     dateend: '12-2019',
     dateapprox: true,
-    images: ['https://projectbismark.net.s3-website.us-east-2.amazonaws.com/poster20191017.jpg'],
+    images: ['http://projectbismark.net.s3-website.us-east-2.amazonaws.com/poster20191017.jpg'],
     sampledataurl: 'http://projectbismark.net.s3-website.us-east-2.amazonaws.com/csv/samples/',
     contact: 'Prof. Nick Feamster',
     description: 'Longitudinal internet performance data collected from broadband users (volunteers), mostly located in US. Measurements are extracted from the output of standard linux tools (eg. netperf, iperf, ping, traceroute, scamper and dtg) running on dedicated programmable routers (OpenWRT) and Single Board Computers (SBC).',
@@ -96,7 +96,7 @@ export default [ //https://encore-data.s3.us-east-2.amazonaws.com/index.html
           metatags_url: "http://projectbismark.net.s3-website.us-east-2.amazonaws.com/",
           metatags_title: "Broadband Internet Service Benchmark",
           metatags_description: "Project BISmark is an open source, open data, neutral platform for active internet performance monitoring",
-          metatags_image: "https://projectbismark.net.s3-website.us-east-2.amazonaws.com/poster20191017.jpg",
+          metatags_image: "http://projectbismark.net.s3-website.us-east-2.amazonaws.com/poster20191017.jpg",
         }
       ],
       secondary: [
@@ -322,8 +322,8 @@ export default [ //https://encore-data.s3.us-east-2.amazonaws.com/index.html
     shortdesc: 'Revealing Utilization at Internet Interconnection Points',
     compressedsize: '6GB',
     uncompressedsize: 'Unknown',
-    datestart: '01-2016',
-    dateend: '08-2018',
+    datestart: '09-2015',
+    dateend: '03-2017',
     dateapprox: true,
     images: ['http://interconnection.citp.princeton.edu/wp-content/uploads/2016/01/01agg-01_p_easy_natamonth_2017-03-31_1100x484.png'],
     sampledataurl: 'http://interconnection.citp.princeton.edu/wp-content/uploads/2017/07/Interconnect_Measurement_Proj_2017-03-31.xlsx',
