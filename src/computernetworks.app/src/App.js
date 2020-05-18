@@ -595,13 +595,15 @@ function App() {
                 />
               </div>
               <div style={{display: 'flex', textDecoration: 'none'}}>
-              <p><b><a href='https://www.github.com/ggmartins/resources/tree/master/src/computernetworks.app' 
-                       style={{
-                         textDecoration: 'none',
-                         color: 'black'
-                       }}>
-                Computer Networks |
-              </a></b></p>
+              <p><b>
+                <a href='https://www.github.com/ggmartins/resources/tree/master/src/computernetworks.app/src/Datasets.js' 
+                        style={{
+                          textDecoration: 'none',
+                          color: 'black'
+                        }}>
+                  Computer Networks |
+                </a>
+              </b></p>
               <a href='https://www.github.com/ggmartins/resources/tree/master/src/computernetworks.app'>
                 <img 
                   height='50px'
