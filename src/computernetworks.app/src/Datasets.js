@@ -30,7 +30,7 @@ export default [ //https://encore-data.s3.us-east-2.amazonaws.com/index.html
         {
           type: "Publication",
           title : 'Encore: Lightweight Measurement of Web Censorship with Cross-Origin Requests',
-          authors : 'S. Burnett, N. Feamster  ',
+          authors : 'S. Burnett, N. Feamster',
           publisher : 'ACM SIGCOMM 2015',
           locdate : 'London, UK, 2015.',
           url: 'https://conferences.sigcomm.org/sigcomm/2015/pdf/papers/p653.pdf',
@@ -186,8 +186,8 @@ export default [ //https://encore-data.s3.us-east-2.amazonaws.com/index.html
     dateend: 'Current',
     dateapprox: true,
     images: ['https://lh3.googleusercontent.com/xPyyR00HSmmGBjK7r96Ng-4eh3nnh6o7t11ruFBYALB8EMsNbAdJYhSNedwNjzGM07bUAbIlWGMI8Hnd-pFIeg=w800'],
-    sampledataurl: 'TBD',
-    contact: 'Prof. Nick Feamster',
+    sampledataurl: 'https://github.com/noise-lab/iot-inspector-server-v2/wiki/Data-Access-and-Schema',
+    contact: 'Prof. Danny Y. Huang, Prof. Nick Feamster',
     description: 'An open-source desktop tool with a one-click install process. Automatically discovers IoT devices and analyzes their network traffic. Helps you identify security and privacy issues with graphs and tables. Requires minimal technical skills and no special hardware. Use it to quickly inspect devices (e.g., from your computer) or continuously monitor your network (e.g., from a Raspberry Pi)',
     refurls:{
       primary: [
@@ -255,7 +255,7 @@ export default [ //https://encore-data.s3.us-east-2.amazonaws.com/index.html
     dateend: '08-2018',
     dateapprox: true,
     images: ['https://netmicroscope.com/images/nmcharts.png'],
-    sampledataurl: 'TBD',
+    sampledataurl: 'https://nm-public-data.s3.us-east-2.amazonaws.com/dataset/all_traffic_time_10.pkl',
     contact: 'Prof. Nick Feamster',
     description: 'Dataset collection on passive network monitoring of Over-The-Top internet applications such as Netflix, Youtube and Facebook.',
     refurls:{
@@ -279,6 +279,15 @@ export default [ //https://encore-data.s3.us-east-2.amazonaws.com/index.html
           locdate : 'Boston, USA June 8-12, 2020',
           url: 'https://netmicroscope.com/papers/paper_cr.pdf',
           metatags_enable: false,
+        },
+        {
+          type: "Source Code",
+          url: "https://github.com/inria-muse/video_collection",
+          metatags_enable: true,
+          metatags_url: "https://github.com/inria-muse/video_collection",
+          metatags_title: "GitHub - inria-muse/video_collection: Tools used to collected video session data (with ground truth) for a number of service",
+          metatags_description: "Tools used to collected video session data (with ground truth) for a number of service - inria-muse/video_collection.",
+          metatags_image: "https://avatars1.githubusercontent.com/u/10745014?s=400&v=4",
         },
         {
           type: "Video",
@@ -310,7 +319,16 @@ export default [ //https://encore-data.s3.us-east-2.amazonaws.com/index.html
           metatags_title: "What's Driving The WSJ’s “Truth About Broadband” Series",
           metatags_description: "There is nothing like media sensation to drive a preferred policy outcome when mainstream regulatory analysis can't.",
           metatags_image: "https://cdac-misc.s3.us-east-2.amazonaws.com/images/vcmJlcy1sb2dvLWRhcmsucG5n.png"
-        }
+        },
+        {
+          type: "Alternative Data Location (UChicago)",
+          title: "Video Quality of Experience Survey",
+          description: "QoE opinion score about sampled video sessions.",
+          url: "(\"parkscluster\").cs.uchicago.edu/data/gmartins/netmicroscope/vqoesurvey.csv",
+          image: 'https://cdac-misc.s3.us-east-2.amazonaws.com/images/surveywordcloud.png',
+          metatags_enable: false,
+        },
+
       ]
     }
   },
