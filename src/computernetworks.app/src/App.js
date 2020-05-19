@@ -38,14 +38,14 @@ const columns = [
     name: 'Title',
     selector: 'title',
     sortable: true,
-    maxWidth: '180px',
+    maxWidth: '260px',
   },
   {
     name: 'Description',
     selector: 'shortdesc',
     sortable: true,
   },
-  {
+  /*{
     name: 'Start',
     selector: 'datestart',
     sortable: true,
@@ -62,7 +62,7 @@ const columns = [
     selector: 'compressedsize',
     sortable: true,
     maxWidth: '8px',
-  },
+  },*/
   {
     name: 'Key Words',
     selector: 'keywords',
