@@ -1,12 +1,13 @@
+/**
+ * Base App.js file case be used as a template for new
+ * datatable search applications.
+ */
+
 import React from 'react';
-//import logo from './logo.svg';
 import './App.css';
 //TODO: TypeScript
 import IconSearch from '@material-ui/icons/Search';
 import TextField from '@material-ui/core/TextField';
-//import Typography from '@material-ui/core/Typography';
-//import useMediaQuery from '@material-ui/core/useMediaQuery';
-//import LinkIcon from '@material-ui/icons/Link';
 import Snackbar from '@material-ui/core/Snackbar';
 import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
@@ -14,8 +15,6 @@ import Button from '@material-ui/core/Button';
 import DataTable from 'react-data-table-component';
 import 'react-responsive-modal/styles.css';
 import { Modal } from 'react-responsive-modal';
-//import parse from 'html-react-parser';
-//import traverse from 'react-traverse';
 import data from './data/Datasets.js';
 import RefURLs from './components/refurls'
 import ExpansionPanel from './components/expansionpanel'
@@ -32,6 +31,7 @@ const columns = [
     selector: 'shortdesc',
     sortable: true,
   },
+  /** Add relevant data to Datatable here */
   /*{
     name: 'Start',
     selector: 'datestart',
@@ -192,17 +192,22 @@ function App() {
                   filterText={filterText} 
                 />
               </div>
-              <div style={{display: 'flex', textDecoration: 'none'}}>
+              <div style={{
+                display: 'flex',
+                verticalAlign: 'center',
+                textDecoration: 'none',
+              }}>
               <p><b>
-                <a href='https://www.github.com/ggmartins/resources/tree/master/src/computernetworks.app/src/Datasets.js' 
+              <a href='https://www.github.com/ggmartins/resources/tree/master/src/computerscience.app/src/Datasets.js' 
                         style={{
+                          alignItems: 'center',
                           textDecoration: 'none',
-                          color: 'black'
+                          color: 'black',
                         }}>
-                  Computer Networks |
+                  Computer Science |
                 </a>
               </b></p>
-              <a href='https://www.github.com/ggmartins/resources/tree/master/src/computernetworks.app'>
+              <a href='https://www.github.com/ggmartins/resources/tree/master/src/computerscience.app'>
                 <img 
                   height='50px'
                   src='https://cdac-misc.s3.us-east-2.amazonaws.com/images/Ei-sc-github.svg'
