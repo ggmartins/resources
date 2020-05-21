@@ -75,30 +75,18 @@ class ExpansionPanel extends React.Component {
             <b>Key Words: </b> <i>{this.data.keywords}</i>
           </CardContent>
         </Card>
-        {/*<Card style={this.card2Style}>
-          <CardContent>
-            <CardInfoStyle>*/}
               <div>
                 <TableContainer style={this.card2Style} component={Paper}> {/*component={Paper}*/}
                   <Table style={this.cardInfoStyle} size="small">
-                    {/*size="small" aria-label="a dense table"*/}
-                    {/*<TableHead>
-                    <TableRow>  
-                        <TableCell style={{ backgroundColor: 'lightgray'}}>
-                          <b>Information</b>
-                        </TableCell>
-                      </TableRow>
-                    </TableHead>*/}
                     <TableBody>
                       <TableRow>  
-                          <TableCell> {/*component="th" scope="row" */}
+                          <TableCell>
                             <CardInfoLink>
                               <CopyToClipboard
                                 onCopy={(e)=>this.snackBarHandle(e)}
                                 text={this.data.refurls.primary[0].url}>
                                 <WeblinkIcon 
                                   style={{ marginRight: '3px', marginTop: '3px' }}
-                                  /*onClick={()=>{alert('test')}}*/
                                 />
                               </CopyToClipboard>
                               <a href={this.data.refurls.primary[0].url}>
@@ -149,20 +137,11 @@ class ExpansionPanel extends React.Component {
                     </TableBody>
                   </Table>
                 </TableContainer>
-                {/*<Modal
-                  open={this.open}
-                  onClose={this.onCloseModal} 
-                >
-                <div>dssdfsf</div>
-                </Modal>*/}
               </div>
-            {/*</CardInfoStyle>
-          </CardContent>
-        </Card>*/}
       </ExpansionStyle>
       </div>
     );//return
   }//render
-}//Expansion
+}//ExpansionPanel
 
 export default ExpansionPanel;
