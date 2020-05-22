@@ -29,16 +29,51 @@ function App() {
   );
 
   return (
-    <TreeView
-      className={classes.root}
-      defaultCollapseIcon={<ExpandMoreIcon />}
-      defaultExpandIcon={<ChevronRightIcon />}
-      defaultExpanded={['root']}
-    >
-      <TreeItem key={data.id} nodeId={data.id} label={data.name}>
-      {data.entry.map((entry: CatalogEntry)=>renderCatalog(entry))}
-      </TreeItem>
-    </TreeView>
+    <div>
+      <div style={{width: '100%',
+                    display: 'flex',
+                    flexWrap: 'wrap',
+                    justifyContent: 'space-between'
+      }}>
+        <img height='50' src='https://cdac.uchicago.edu/wp-content/uploads/2019/09/CDAC_Logo_RGB_v01Full.svg' alt='CDAC' />
+        <div style={{
+          display: 'flex',
+          verticalAlign: 'center',
+          textDecoration: 'none',
+        }}>
+        <p><b>
+        <a href='https://github.com/ggmartins/resources/blob/master/index/src/data/catalog.tsx'
+                  style={{
+                    alignItems: 'center',
+                    textDecoration: 'none',
+                    color: 'black',
+                  }}>
+            Catalog |
+          </a>
+        </b></p>
+        <a href='https://github.com/ggmartins/resources/tree/master/index'>
+          <img
+            height='50px'
+            src='https://cdac-misc.s3.us-east-2.amazonaws.com/images/Ei-sc-github.svg'
+            alt='GitHub'
+          />
+        </a>
+        </div>
+      </div>
+      <div style={{marginTop: '10px', marginLeft: '10px'}}>
+        <TreeView
+          className={classes.root}
+          defaultCollapseIcon={<ExpandMoreIcon />}
+          defaultExpandIcon={<ChevronRightIcon />}
+          defaultExpanded={['root']}
+        >
+          <TreeItem key={data.id} nodeId={data.id} label={data.name}>
+          {data.entry.map((entry: CatalogEntry)=>renderCatalog(entry))}
+          </TreeItem>
+        </TreeView>
+      </div>
+    </div>
+
   );
 }
 

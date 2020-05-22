@@ -198,7 +198,7 @@ function App() {
                 textDecoration: 'none',
               }}>
               <p><b>
-              <a href='https://www.github.com/ggmartins/resources/tree/master/src/computerscience.app/src/Datasets.js' 
+              <a href='https://www.github.com/ggmartins/resources/tree/master/apps/computerscience.app/src/Datasets.js' 
                         style={{
                           alignItems: 'center',
                           textDecoration: 'none',
@@ -207,7 +207,7 @@ function App() {
                   Computer Science |
                 </a>
               </b></p>
-              <a href='https://www.github.com/ggmartins/resources/tree/master/src/computerscience.app'>
+              <a href='https://www.github.com/ggmartins/resources/tree/master/apps/computerscience.app'>
                 <img 
                   height='50px'
                   src='https://cdac-misc.s3.us-east-2.amazonaws.com/images/Ei-sc-github.svg'

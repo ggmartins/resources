@@ -17,7 +17,7 @@ const data: Catalog = {
     {
       id: '1',
       name: 'Computer Science',
-      link: 'resources/docs/computerscience'
+      link: 'docs/computerscience'
     }
   ],
 };
