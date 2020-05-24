@@ -24,12 +24,14 @@ function App() {
       key={entry.id}
       nodeId={entry.id}
       label={entry.name}
-      onClick={()=>{window.location.href=entry.link}}
-    />
+      onClick={(e)=>{entry.link?window.location.href=entry.link:e.preventDefault()}}
+    >
+      {entry.entry?entry.entry.map((e)=>renderCatalog(e)):null}
+    </TreeItem>
   );
 
   return (
-    <div>
+    <div style={{marginTop:'4px', marginLeft: '24px'}}>
       <div style={{width: '100%',
                     display: 'flex',
                     flexWrap: 'wrap',
