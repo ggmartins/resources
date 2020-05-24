@@ -198,7 +198,7 @@ function App() {
                 textDecoration: 'none',
               }}>
               <p><b>
-              <a href='https://www.github.com/ggmartins/resources/tree/master/apps/computerscience.app/src/Datasets.js' 
+              <a href='https://github.com/ggmartins/resources/tree/master/apps/computerscience.app/src/data' 
                         style={{
                           alignItems: 'center',
                           textDecoration: 'none',
